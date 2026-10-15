@@ -87,7 +87,7 @@ export default function Layout() {
           ],
         },
       ]}
-      copyright="© 2024 Monix Agency. Todos los derechos reservados."
+      copyright="© 2026 Monix Agency. Todos los derechos reservados."
       links={[
         {
           label: "hola@monixagency.es",
