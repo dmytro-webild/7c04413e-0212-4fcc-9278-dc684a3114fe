@@ -226,8 +226,6 @@ export default function HomePage() {
               imageSrc: "https://images.pexels.com/photos/6289048/pexels-photo-6289048.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
             },
           ],
-          imageSrc: "https://images.pexels.com/photos/8533353/pexels-photo-8533353.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&_wi=2",
-          imageAlt: "web design icon vector",
         },
       ]}
       textAnimation="fade-blur"
