@@ -38,7 +38,7 @@ export default function ServiciosSection(): React.JSX.Element {
             {
               icon: MessageCircle,
               title: "Integración total",
-              description: "Botón de WhatsApp y formularios de contacto directos.",
+              description: "Botón de Contacto: hola@monixagency.com y formularios de contacto directos.",
             },
             {
               icon: Settings,
