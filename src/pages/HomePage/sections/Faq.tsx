@@ -24,7 +24,7 @@ export default function FaqSection(): React.JSX.Element {
             },
             {
               question: "¿Invertir en una página web me puede garantizar resultados?",
-              answer: "Sí, te podemos garantizar resultados a largo plazo",
+              answer: "No. Una vez finalizada y publicada la web, el contenido quedará definitivo y no se podrán realizar cambios posteriores. ",
             },
             {
               question: "¿Incluye dominio y hosting?",
