@@ -17,7 +17,8 @@ export default function CtaSection(): React.JSX.Element {
             href: "#contacto",
           }}
           secondaryButton={{
-            text: "Hablar por WhatsApp",
+            text: "Hablar por Correo electrònico: hola@monixagency.com
+",
             href: "#",
           }}
           textAnimation="fade-blur"
