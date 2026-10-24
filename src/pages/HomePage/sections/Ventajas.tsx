@@ -32,7 +32,7 @@ export default function VentajasSection(): React.JSX.Element {
                 {
                   name: "Precios Claros",
                   role: "Transparencia",
-                  detail: "Sabrás exactamente qué pagas, sin sorpresas.",
+                  detail: "Sabrás exactamente cuál será la inversión",
                   imageSrc: "https://images.pexels.com/photos/32238893/pexels-photo-32238893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
                 },
                 {
