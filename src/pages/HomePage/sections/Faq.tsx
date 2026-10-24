@@ -24,7 +24,7 @@ export default function FaqSection(): React.JSX.Element {
             },
             {
               question: "¿Podré modificar el contenido?",
-              answer: "Sí, te entregamos una web intuitiva y te enseñamos a hacer cambios básicos si lo necesitas.",
+              answer: "Sí, te podemos garantizar resultados a largo plazo",
             },
             {
               question: "¿Incluye dominio y hosting?",
