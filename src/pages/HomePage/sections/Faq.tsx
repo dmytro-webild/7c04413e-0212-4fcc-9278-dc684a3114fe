@@ -23,7 +23,7 @@ export default function FaqSection(): React.JSX.Element {
               answer: "En absoluto. Nosotros nos encargamos de toda la parte técnica para que tú no te preocupes de nada.",
             },
             {
-              question: "¿Podré modificar el contenido?",
+              question: "¿Invertir en una página web me puede garantizar resultados?",
               answer: "Sí, te podemos garantizar resultados a largo plazo",
             },
             {
