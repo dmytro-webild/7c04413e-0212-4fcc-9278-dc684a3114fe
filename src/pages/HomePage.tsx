@@ -12,29 +12,26 @@ import SectoresSection from './HomePage/sections/Sectores';
 import ProcesoSection from './HomePage/sections/Proceso';
 import VentajasSection from './HomePage/sections/Ventajas';
 import FaqSection from './HomePage/sections/Faq';
-import CtaSection from './HomePage/sections/Cta';
 import ContactoSection from './HomePage/sections/Contacto';
 
 export default function HomePage(): React.JSX.Element {
   return (
-<>
-  <HeroSection />
+    <>
+      <HeroSection />
 
-  <ProblemaSection />
+      <ProblemaSection />
 
-  <ServiciosSection />
+      <ServiciosSection />
 
-  <SectoresSection />
+      <SectoresSection />
 
-  <ProcesoSection />
+      <ProcesoSection />
 
-  <VentajasSection />
+      <VentajasSection />
 
-  <FaqSection />
+      <FaqSection />
 
-  <CtaSection />
-
-  <ContactoSection />
+      <ContactoSection />
     </>
   );
 }
