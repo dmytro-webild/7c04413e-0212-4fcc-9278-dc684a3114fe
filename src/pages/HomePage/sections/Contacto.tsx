@@ -11,7 +11,10 @@ export default function ContactoSection(): React.JSX.Element {
         <SectionErrorBoundary name="contacto">
               <ContactCta
           tag="Contacto"
-          text="Solicita tu presupuesto gratuito hoy mismo y hablemos de tu proyecto."
+          text="
+Tu próxima gran idea empieza aquí.
+
+"
           primaryButton={{
             text: "Enviar solicitud",
             href: "#",
