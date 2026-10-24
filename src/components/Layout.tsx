@@ -90,8 +90,8 @@ export default function Layout() {
       copyright="© 2026 Monix Agency. Todos los derechos reservados."
       links={[
         {
-          label: "hola@monixagency.es",
-          href: "mailto:hola@monixagency.es",
+          label: "hola@monixagency.com",
+          href: "mailto:hola@monixagency.com",
         },
       ]}
       imageSrc="https://images.pexels.com/photos/12882794/pexels-photo-12882794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
