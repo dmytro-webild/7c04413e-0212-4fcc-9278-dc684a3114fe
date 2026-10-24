@@ -15,7 +15,7 @@ export default function HeroSection(): React.JSX.Element {
           description="Creamos webs profesionales, rápidas y adaptadas a móviles para ayudarte a destacar, transmitir confianza y vender más en tu localidad."
           primaryButton={{
             text: "Solicitar presupuesto gratis",
-            href: "#contacto",
+            href: "#cta",
           }}
           secondaryButton={{
             text: "Ver cómo trabajamos",
