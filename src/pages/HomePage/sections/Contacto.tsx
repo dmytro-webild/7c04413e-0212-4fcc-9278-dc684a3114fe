@@ -9,7 +9,7 @@ const primaryButton = {
   href: "#"
 };
 const secondaryButton = {
-  text: "WhatsApp",
+  text: "hola@monixagency.com",
   href: "#"
 };
 
