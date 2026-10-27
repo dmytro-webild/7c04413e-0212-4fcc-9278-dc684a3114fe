@@ -45,7 +45,7 @@ export default function Layout() {
       logo="Monix Agency"
       ctaButton={{
         text: "Pide tu presupuesto",
-        href: "#contacto",
+        href: "#cta",
       }}
      navItems={navItems} />
       </SectionErrorBoundary>
