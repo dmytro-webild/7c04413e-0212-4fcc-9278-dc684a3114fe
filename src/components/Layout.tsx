@@ -82,7 +82,7 @@ export default function Layout() {
             },
             {
               label: "Privacidad",
-              href: "#",
+              href: "/politica-de-privacidad",
             },
           ],
         },
