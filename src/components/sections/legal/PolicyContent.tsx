@@ -20,25 +20,25 @@ const PolicyContent = ({
   sections: ContentSection[];
 }) => {
   return (
-    <article aria-label="Policy content" className="w-content-width mx-auto pt-40 pb-20">
-      <div className="md:max-w-1/2 mx-auto flex flex-col gap-5">
+    <article aria-label="Policy content" className="w-content-width mx-auto pt-36 md:pt-40 pb-20 md:pb-30">
+      <div className="max-w-3xl mx-auto flex flex-col gap-6">
         <div className="flex flex-col gap-3">
-          <h1 className="text-3xl md:text-4xl font-semibold leading-snug">{title}</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">{title}</h1>
           {subtitle && (
-            <p className="text-sm opacity-50">{subtitle}</p>
+            <p className="text-base opacity-70">{subtitle}</p>
           )}
         </div>
 
         <div className="w-full h-px bg-foreground/20" />
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-8">
           {sections.map((section) => (
             <section key={section.heading} className="flex flex-col gap-3">
-              <h2 className="text-xl md:text-2xl font-semibold leading-snug">{section.heading}</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold leading-snug">{section.heading}</h2>
               {section.content.map((item, i) => {
                 if (item.type === "paragraph") {
                   return (
-                    <p key={i} className="text-sm md:text-base opacity-75 leading-relaxed">
+                    <p key={i} className="text-base opacity-85 leading-relaxed">
                       {item.text}
                     </p>
                   );
@@ -50,7 +50,7 @@ const PolicyContent = ({
                   <ListTag
                     key={i}
                     className={cls(
-                      "flex flex-col gap-3 pl-5 text-sm md:text-base opacity-75 leading-relaxed",
+                      "flex flex-col gap-3 pl-5 text-base opacity-85 leading-relaxed",
                       item.type === "numbered-list" ? "list-decimal" : "list-disc"
                     )}
                   >
