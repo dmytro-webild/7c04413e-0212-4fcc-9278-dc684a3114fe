@@ -21,7 +21,7 @@ export default function HeroSection(): React.JSX.Element {
             text: "Ver cómo trabajamos",
             href: "#proceso",
           }}
-          imageSrc="https://storage.googleapis.com/webild/users/user_3KKimWl3so6Ovc6HH5FESwIiQ4V/uploaded-1792837724068-9hapbp5u.png"
+          imageSrc="https://storage.googleapis.com/webild/users/user_3KKimWl3so6Ovc6HH5FESwIiQ4V/uploaded-1794089477483-ca7p89jy.png"
           textAnimation="slide-up"
         />
         </SectionErrorBoundary>
