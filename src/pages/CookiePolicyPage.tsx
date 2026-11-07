@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import PolicyContent from "@/components/sections/legal/PolicyContent";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import Button from "@/components/ui/Button";
 
 export default function CookiePolicyPage(): React.JSX.Element {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleOpenConfig = () => {
+    window.dispatchEvent(new CustomEvent("open-cookie-config"));
+  };
 
   const sections = [
     {
@@ -145,11 +150,32 @@ export default function CookiePolicyPage(): React.JSX.Element {
 
   return (
     <ScrollReveal variant="fade">
-      <PolicyContent
-        title="Política de Cookies – MonixAgency"
-        subtitle="Última actualización: 7 de noviembre de 2026"
-        sections={sections}
-      />
+      <div>
+        <PolicyContent
+          title="Política de Cookies – MonixAgency"
+          subtitle="Última actualización: 7 de noviembre de 2026"
+          sections={sections}
+        />
+        <div className="w-content-width mx-auto max-w-3xl pb-20 -mt-10">
+          <div className="card rounded-lg p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-border">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-1">
+                Gestión de preferencias de cookies
+              </h3>
+              <p className="text-sm text-foreground/80">
+                Puede consultar o ajustar su configuración de consentimiento en cualquier momento.
+              </p>
+            </div>
+            <Button
+              text="Configurar cookies"
+              variant="primary"
+              onClick={handleOpenConfig}
+              animate={false}
+              className="shrink-0"
+            />
+          </div>
+        </div>
+      </div>
     </ScrollReveal>
   );
 }
