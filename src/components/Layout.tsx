@@ -85,6 +85,10 @@ export default function Layout() {
               label: "Privacidad",
               href: "/politica-de-privacidad",
             },
+            {
+              label: "Política de cookies",
+              href: "/politica-de-cookies",
+            },
           ],
         },
       ]}

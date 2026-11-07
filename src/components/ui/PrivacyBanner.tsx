@@ -40,13 +40,13 @@ export default function PrivacyBanner() {
         >
           <div className="w-content-width mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <p className="text-sm text-foreground/90 max-w-3xl leading-relaxed">
-              Utilizamos cookies y tecnologías necesarias para garantizar el correcto funcionamiento de nuestra web. Consulta nuestra política de privacidad para más información.
+              Utilizamos cookies y tecnologías necesarias para garantizar el correcto funcionamiento de nuestra web. Consulta nuestra política de cookies para más información.
             </p>
             <div className="flex flex-wrap items-center gap-3 shrink-0 w-full md:w-auto justify-end">
               <Button
                 text="Más información"
                 variant="secondary"
-                href="/politica-de-privacidad"
+                href="/politica-de-cookies"
                 animate={false}
               />
               <Button
