@@ -79,7 +79,7 @@ export default function Layout() {
           items: [
             {
               label: "Aviso legal",
-              href: "#",
+              href: "/aviso-legal",
             },
             {
               label: "Privacidad",
