@@ -30,7 +30,7 @@ const HeroOverlay = ({
   return (
     <section
       aria-label="Hero section"
-      className="relative w-full h-svh overflow-hidden flex flex-col justify-end mb-20"
+      className="relative w-full min-h-[90vh] lg:h-svh overflow-hidden flex flex-col justify-center mb-20"
     >
       <HeroBackgroundSlot />
       <ImageOrVideo
@@ -40,27 +40,22 @@ const HeroOverlay = ({
       />
 
       <div
-        className="absolute inset-0 bg-black/60 z-[1]"
+        className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-[1]"
         aria-hidden="true"
       />
 
-      <div
-        className="absolute z-10 w-[150vw] h-[150vw] left-0 bottom-0 -translate-x-1/2 translate-y-1/2 backdrop-blur mask-[radial-gradient(circle,black_20%,transparent_70%)]"
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 w-content-width mx-auto pb-10 md:pb-25">
-        <div className="flex flex-col gap-3 w-full md:w-6/10 lg:w-1/2 xl:w-45/100 2xl:w-4/10">
-          <div className="w-fit px-3 py-1 mb-1 text-sm card rounded">
-            <p>{tag}</p>
+      <div className="relative z-10 w-content-width mx-auto py-16 md:py-24">
+        <div className="flex flex-col gap-4 w-full md:w-6/10 lg:w-1/2 xl:w-[48%]">
+          <div className="w-fit px-3.5 py-1.5 mb-1 text-sm rounded bg-white/10 backdrop-blur-md text-white border border-white/20">
+            <p className="font-medium text-white">{tag}</p>
           </div>
 
           <TextAnimation
             text={title}
             variant={textAnimation}
-            gradientText={true}
+            gradientText={false}
             tag="h1"
-            className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-white text-balance"
+            className="text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-[1.15] font-bold text-white text-balance drop-shadow-md"
           />
 
           <TextAnimation
@@ -68,17 +63,17 @@ const HeroOverlay = ({
             variant={textAnimation}
             gradientText={false}
             tag="p"
-            className="text-lg md:text-xl text-white leading-snug text-balance"
+            className="text-lg md:text-xl text-white/90 leading-relaxed text-balance drop-shadow-sm"
           />
 
-          <div className="flex flex-wrap gap-3 mt-2 md:mt-3">
+          <div className="flex flex-wrap gap-3 mt-3 md:mt-4">
             <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>
-            <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />
+            <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
           </div>
 
           {avatarsSrc && avatarsSrc.length > 0 && (
             <div className="mt-3 md:mt-4">
-              <AvatarGroup avatarsSrc={avatarsSrc} size="lg" label={avatarsLabel} labelClassName="text-primary-cta-text" />
+              <AvatarGroup avatarsSrc={avatarsSrc} size="lg" label={avatarsLabel} labelClassName="text-white" />
             </div>
           )}
         </div>
