@@ -2,6 +2,7 @@ import FooterSimpleMedia from '@/components/sections/footer/FooterSimpleMedia';
 import NavbarFullscreenStatic from '@/components/ui/NavbarFullscreenStatic';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
+import PrivacyBanner from "@/components/ui/PrivacyBanner";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
 
@@ -97,6 +98,7 @@ export default function Layout() {
       imageSrc="https://images.pexels.com/photos/12882794/pexels-photo-12882794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     />
       </SectionErrorBoundary>
+      <PrivacyBanner />
     </StyleProvider>
   );
 }
