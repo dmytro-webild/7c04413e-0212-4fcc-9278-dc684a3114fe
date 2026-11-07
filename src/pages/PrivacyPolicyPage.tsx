@@ -141,12 +141,85 @@ export default function PrivacyPolicyPage(): React.JSX.Element {
         },
       ],
     },
+    {
+      heading: "7. TRANSFERENCIAS INTERNACIONALES",
+      content: [
+        {
+          type: "paragraph" as const,
+          text: "El sitio web ha sido creado mediante la plataforma Webild, desarrollada por Webild Inc., entidad establecida en Estados Unidos.",
+        },
+        {
+          type: "paragraph" as const,
+          text: "En función de la infraestructura y los servicios utilizados, determinados datos técnicos o personales podrían ser tratados fuera del Espacio Económico Europeo.",
+        },
+        {
+          type: "paragraph" as const,
+          text: "Cuando se produzcan transferencias internacionales de datos personales, deberán realizarse de conformidad con el RGPD y contar con las garantías legalmente exigidas.",
+        },
+        {
+          type: "paragraph" as const,
+          text: "Antes de la publicación de esta política se verificará qué proveedores intervienen efectivamente en el funcionamiento del sitio web y qué garantías se aplican a las transferencias internacionales.",
+        },
+      ],
+    },
+    {
+      heading: "8. DERECHOS DE LOS USUARIOS",
+      content: [
+        {
+          type: "paragraph" as const,
+          text: "Los usuarios podrán ejercer, cuando corresponda, los siguientes derechos:",
+        },
+        {
+          type: "list" as const,
+          items: [
+            "Acceso a sus datos personales.",
+            "Rectificación de los datos inexactos.",
+            "Supresión de sus datos.",
+            "Oposición al tratamiento.",
+            "Limitación del tratamiento.",
+            "Portabilidad de los datos.",
+            "Retirada del consentimiento previamente otorgado, sin afectar a la licitud del tratamiento anterior.",
+          ],
+        },
+        {
+          type: "paragraph" as const,
+          text: "Para ejercer estos derechos, podrán enviar una solicitud al correo electrónico: hola@monixagency.com",
+        },
+        {
+          type: "paragraph" as const,
+          text: "Asimismo, si consideran que sus derechos han sido vulnerados, podrán presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD), a través de su página oficial: www.aepd.es.",
+        },
+      ],
+    },
+    {
+      heading: "9. SEGURIDAD DE LOS DATOS",
+      content: [
+        {
+          type: "paragraph" as const,
+          text: "MonixAgency adoptará las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales recopilados y evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología y la naturaleza de los datos almacenados.",
+        },
+      ],
+    },
+    {
+      heading: "10. MODIFICACIONES DE LA POLÍTICA DE PRIVACIDAD",
+      content: [
+        {
+          type: "paragraph" as const,
+          text: "MonixAgency se reserva el derecho de modificar la presente Política de Privacidad para adaptarla a novedades legislativas, jurisprudenciales o cambios en sus actividades.",
+        },
+        {
+          type: "paragraph" as const,
+          text: "Cualquier modificación será publicada en este sitio web, indicando la fecha de la última actualización.",
+        },
+      ],
+    },
   ];
 
   return (
     <ScrollReveal variant="fade">
       <PolicyContent
         title="Política de Privacidad – MonixAgency"
+        subtitle="Última actualización: 7 de noviembre de 2026"
         sections={sections}
       />
     </ScrollReveal>
