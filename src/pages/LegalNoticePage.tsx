@@ -21,9 +21,9 @@ export default function LegalNoticePage(): React.JSX.Element {
             "Nombre comercial: MonixAgency",
             "Titular: Jorge Hidalgo",
             "NIF: 46716959A",
-            "Domicilio: Badalona",
+            "Domicilio: Badalona, Barcelona, Barcelona",
             "Correo electrónico: hola@monixagency.com",
-            "Sitio web: monixagency.com",
+            "Sitio web: www.monixagency.com",
           ],
         },
         {
@@ -145,7 +145,8 @@ export default function LegalNoticePage(): React.JSX.Element {
     <ScrollReveal variant="fade">
       <PolicyContent
         title="Aviso Legal – Monix Agency"
-        subtitle="Última actualización: 7 de noviembre de 2024"
+        subtitle="Última actualización: 7 de noviembre de 2026
+"
         sections={sections}
       />
     </ScrollReveal>
