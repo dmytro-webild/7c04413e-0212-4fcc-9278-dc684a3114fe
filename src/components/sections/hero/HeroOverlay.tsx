@@ -40,6 +40,11 @@ const HeroOverlay = ({
       />
 
       <div
+        className="absolute inset-0 bg-black/60 z-[1]"
+        aria-hidden="true"
+      />
+
+      <div
         className="absolute z-10 w-[150vw] h-[150vw] left-0 bottom-0 -translate-x-1/2 translate-y-1/2 backdrop-blur mask-[radial-gradient(circle,black_20%,transparent_70%)]"
         aria-hidden="true"
       />
