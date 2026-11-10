@@ -10,7 +10,9 @@ export default function VentajasSection(): React.JSX.Element {
     <div id="ventajas" data-section="ventajas">
         <SectionErrorBoundary name="ventajas">
               <TeamListCards
-          tag="Por qué Monix Agency"
+          tag="Por qué Monix Agency
+
+CEO Alex HP"
           title="Tu socio digital de confianza"
           description="Nos enfocamos en ofrecer un servicio humano, profesional y sin sorpresas."
           groups={[
