@@ -18,7 +18,7 @@ export default function CtaSection(): React.JSX.Element {
           }}
           secondaryButton={{
             text: "Hablar por Contacto: hola@monixagency.com",
-            href: "#",
+            href: "https://mail.google.com/mail/?view=cm&fs=1&to=hola@monixagency.com",
           }}
           textAnimation="fade-blur"
         />

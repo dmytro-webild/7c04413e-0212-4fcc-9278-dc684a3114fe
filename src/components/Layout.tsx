@@ -96,7 +96,7 @@ export default function Layout() {
       links={[
         {
           label: "hola@monixagency.com",
-          href: "mailto:hola@monixagency.com",
+          href: "https://mail.google.com/mail/?view=cm&fs=1&to=hola@monixagency.com",
         },
       ]}
       imageSrc="https://images.pexels.com/photos/12882794/pexels-photo-12882794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

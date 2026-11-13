@@ -22,6 +22,17 @@ export const useButtonClick = (href?: string, onClick?: () => void) => {
 
   const handleClick = (e?: React.MouseEvent) => {
     if (href) {
+      if (href.includes("hola@monixagency.com")) {
+        e?.preventDefault();
+        window.open(
+          "https://mail.google.com/mail/?view=cm&fs=1&to=hola@monixagency.com",
+          "_blank",
+          "noopener,noreferrer"
+        );
+        onClick?.();
+        return;
+      }
+
       const isExternalLink = /^(https?:\/\/|www\.)/.test(href);
       const isEmailOrPhone = /^(mailto:|tel:)/.test(href);
 
