@@ -1,3 +1,4 @@
+import React from "react";
 import { cls } from "@/lib/utils";
 
 type ContentItem =
@@ -8,6 +9,30 @@ type ContentItem =
 type ContentSection = {
   heading: string;
   content: ContentItem[];
+};
+
+const renderFormattedText = (text: string) => {
+  if (!text.includes("hola@monixagency.com")) return text;
+  const parts = text.split("hola@monixagency.com");
+  return (
+    <>
+      {parts.map((part, idx) => (
+        <React.Fragment key={idx}>
+          {part}
+          {idx < parts.length - 1 && (
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@monixagency.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80 transition-opacity font-medium"
+            >
+              hola@monixagency.com
+            </a>
+          )}
+        </React.Fragment>
+      ))}
+    </>
+  );
 };
 
 const PolicyContent = ({
@@ -39,7 +64,7 @@ const PolicyContent = ({
                 if (item.type === "paragraph") {
                   return (
                     <p key={i} className="text-base opacity-85 leading-relaxed">
-                      {item.text}
+                      {renderFormattedText(item.text)}
                     </p>
                   );
                 }
@@ -55,7 +80,7 @@ const PolicyContent = ({
                     )}
                   >
                     {item.items.map((li, j) => (
-                      <li key={j}>{li}</li>
+                      <li key={j}>{renderFormattedText(li)}</li>
                     ))}
                   </ListTag>
                 );
