@@ -40,7 +40,7 @@ export default function Laptop3DMockup({
 
   return (
     <div
-      className={`relative w-full max-w-xl xl:max-w-2xl mx-auto lg:ml-auto lg:mr-0 flex flex-col items-center justify-center py-4 sm:py-6 select-none ${className}`}
+      className={`relative w-full max-w-xl xl:max-w-2xl mx-auto flex flex-col items-center justify-center py-4 sm:py-6 select-none ${className}`}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
