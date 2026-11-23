@@ -40,7 +40,7 @@ export default function Laptop3DMockup({
 
   return (
     <div
-      className={`relative w-full max-w-2xl mx-auto flex flex-col items-center justify-center py-6 select-none ${className}`}
+      className={`relative w-full max-w-xl xl:max-w-2xl mx-auto lg:ml-auto lg:mr-0 flex flex-col items-center justify-center py-4 sm:py-6 select-none ${className}`}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
@@ -48,7 +48,7 @@ export default function Laptop3DMockup({
     >
       {/* Background Ambient Radial Glow */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 sm:w-96 sm:h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none z-0"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 sm:w-96 sm:h-96 bg-blue-500/25 rounded-full blur-3xl pointer-events-none z-0"
         aria-hidden="true"
       />
 
@@ -59,7 +59,7 @@ export default function Laptop3DMockup({
           isHovered
             ? {}
             : {
-                y: [-8, 8, -8],
+                y: [-6, 6, -6],
                 rotateX: [10, 13, 10],
                 rotateY: [-14, -8, -14],
                 rotateZ: [1.5, -1, 1.5],
@@ -78,7 +78,7 @@ export default function Laptop3DMockup({
       >
         {/* === LAPTOP DISPLAY LID === */}
         <div
-          className="relative w-[300px] sm:w-[460px] md:w-[540px] lg:w-[580px] aspect-[16/10] bg-gradient-to-tr from-slate-900 via-slate-800 to-gray-900 rounded-[18px] sm:rounded-[22px] p-2.5 sm:p-3.5 border border-white/25 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8),0_0_30px_rgba(59,130,246,0.15)] overflow-hidden"
+          className="relative w-[280px] xs:w-[340px] sm:w-[440px] md:w-[500px] lg:w-[480px] xl:w-[540px] aspect-[16/10] bg-gradient-to-tr from-slate-900 via-slate-800 to-gray-900 rounded-[18px] sm:rounded-[22px] p-2.5 sm:p-3.5 border border-white/25 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8),0_0_30px_rgba(59,130,246,0.2)] overflow-hidden"
           style={{
             transformStyle: "preserve-3d",
             transformOrigin: "bottom center",
@@ -117,13 +117,13 @@ export default function Laptop3DMockup({
 
         {/* === LAPTOP HINGE === */}
         <div
-          className="w-[120px] sm:w-[160px] h-2.5 sm:h-3 bg-gradient-to-r from-slate-700 via-slate-600 to-slate-700 rounded-b-md shadow-md -mt-0.5 z-20 border-t border-slate-500/30"
+          className="w-[110px] sm:w-[150px] h-2.5 sm:h-3 bg-gradient-to-r from-slate-700 via-slate-600 to-slate-700 rounded-b-md shadow-md -mt-0.5 z-20 border-t border-slate-500/30"
           aria-hidden="true"
         />
 
         {/* === LAPTOP BASE DECK === */}
         <div
-          className="relative w-[330px] sm:w-[500px] md:w-[580px] lg:w-[630px] h-[130px] sm:h-[180px] md:h-[200px] bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950 rounded-b-[24px] sm:rounded-b-[30px] p-2.5 sm:p-4 border-t border-white/20 border-b border-slate-950 shadow-2xl -mt-1"
+          className="relative w-[310px] xs:w-[370px] sm:w-[480px] md:w-[540px] lg:w-[520px] xl:w-[580px] h-[115px] sm:h-[155px] md:h-[180px] lg:h-[170px] xl:h-[190px] bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950 rounded-b-[24px] sm:rounded-b-[30px] p-2.5 sm:p-4 border-t border-white/20 border-b border-slate-950 shadow-2xl -mt-1"
           style={{
             transformStyle: "preserve-3d",
             transform: "rotateX(62deg) translateZ(-12px) translateY(-38px)",
@@ -160,7 +160,7 @@ export default function Laptop3DMockup({
 
         {/* === 3D FLOATING MOBILE PHONE MOCKUP (SECOND DEVICE) === */}
         <motion.div
-          className="absolute right-0 sm:-right-4 bottom-2 sm:bottom-6 z-30 w-[80px] sm:w-[125px] md:w-[145px] aspect-[9/19.5] bg-slate-900 rounded-[20px] sm:rounded-[28px] p-1.5 sm:p-2 border border-white/30 shadow-[0_20px_40px_rgba(0,0,0,0.8)] overflow-hidden"
+          className="absolute right-0 sm:-right-2 md:-right-4 lg:-right-2 xl:-right-4 bottom-2 sm:bottom-4 md:bottom-6 z-30 w-[75px] sm:w-[115px] md:w-[135px] lg:w-[125px] xl:w-[140px] aspect-[9/19.5] bg-slate-900 rounded-[18px] sm:rounded-[26px] p-1.5 sm:p-2 border border-white/30 shadow-[0_20px_40px_rgba(0,0,0,0.8)] overflow-hidden"
           style={{
             transformStyle: "preserve-3d",
             transform: "rotateY(-25deg) rotateX(12deg) rotateZ(-6deg) translateZ(35px)",
@@ -184,11 +184,11 @@ export default function Laptop3DMockup({
           <div className="absolute top-2 left-1/2 -translate-x-1/2 w-8 sm:w-12 h-2 sm:h-3 bg-black rounded-full z-30 border border-slate-800" />
 
           {/* Phone Screen Display */}
-          <div className="relative w-full h-full bg-black rounded-[14px] sm:rounded-[22px] overflow-hidden border border-white/10">
+          <div className="relative w-full h-full bg-black rounded-[12px] sm:rounded-[20px] overflow-hidden border border-white/10">
             <ImageOrVideo
               imageSrc={imageSrc}
               videoSrc={videoSrc}
-              className="w-full h-full object-cover object-center rounded-[14px] sm:rounded-[22px]"
+              className="w-full h-full object-cover object-center rounded-[12px] sm:rounded-[20px]"
             />
             {/* Phone Glass Glare Overlay */}
             <div
@@ -201,7 +201,7 @@ export default function Laptop3DMockup({
 
       {/* === 3D FLOOR DROP SHADOW === */}
       <motion.div
-        className="w-[75%] max-w-[500px] h-7 bg-black/70 blur-xl rounded-[100%] mx-auto -mt-6 z-0"
+        className="w-[75%] max-w-[480px] h-7 bg-black/70 blur-xl rounded-[100%] mx-auto -mt-6 z-0"
         animate={
           isHovered
             ? {}
